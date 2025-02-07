@@ -1,0 +1,102 @@
+/* style.css */
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color:antiquewhite;
+    padding: 5px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    text-align: center;
+    font-weight: bold;
+    font-size: 3em;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav li {
+    margin-left: 20px;
+}
+
+.hero {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.hero h1 {
+    font-size: 2em;
+    color:rgb(143, 143, 233) ;
+    margin-bottom: 20px;
+    }
+
+h2,h3 {
+    color:white;
+}
+
+.hero button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.about, .services, .contact {
+    padding: 10px;
+    text-align: center;
+    background-color: rgb(143, 143, 233);
+}
+
+.service-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.service {
+    border: 1px solid #ccc;
+    padding: 20px;
+}
+.navigation{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    padding: 5px;
+    margin: 5px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column; 
+        align-items: flex-start;
+    }
+    nav ul {
+        flex-direction: column;
+        margin-top: 10px;
+    }
+    nav li {
+        margin: 10px 0;
+    }
+}
